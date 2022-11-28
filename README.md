@@ -3,6 +3,7 @@ markdown的语法和测试文件
 下面可以直接文件到到markdown源码文件中，具体效果可以参考[效果图](https://github.com/AndyZhangHong/MarkdownSyntaxTest/blob/main/%E6%B5%8B%E8%AF%95%E8%AF%AD%E6%B3%95.md)
 流程图测试网站：[mermaid](https://mermaid.live/)
 
+
 <pre><code>
 ## Markdown 目录
 
@@ -44,7 +45,7 @@ markdown的语法和测试文件
 - 上标：使用`^`包裹文本，如 X^2^
 - 高亮：使用`==`包裹文本，如==highlight==
 - 删除线：使用`~~`包裹文本，如~~删除线~~
-- 下划线：使用`<u>`包裹文本，如<u>带下划线文本</u>
+- 下划线：使用`&lt;u&gt;`包裹文本，如&lt;u&gt;带下划线文本&lt;/u&gt;
 - 脚注：
 
   ```
@@ -126,27 +127,27 @@ markdown的语法和测试文件
 
 ### 区块引用
 
-- 在行首放置 1 个 `>`
+- 在行首放置 1 个 `&gt;`
 
-> 区块引用
+&gt; 区块引用
 
 ### 区块引用嵌套
 
-在行首放置多个 `>` ，段落和列表的下一行放置 `>` 时会自动对区块引用进行嵌套
+在行首放置多个 `&gt;` ，段落和列表的下一行放置 `&gt;` 时会自动对区块引用进行嵌套
 
-> 最外层
-> > 第一层嵌套
-> > > 第二层嵌套
+&gt; 最外层
+&gt; &gt; 第一层嵌套
+&gt; &gt; &gt; 第二层嵌套
 
 ## Markdown 代码
 
 ### 行内代码
 
-- 用 <code>`</code> 包裹行内代码
+- 用 &lt;code&gt;`&lt;/code&gt; 包裹行内代码
 
 ### 代码区块
 
-- 推荐使用<code>```</code>包裹代码块并声明所用语言，不推荐在代码块的行首放置 4 个空格或 1 个制表符
+- 推荐使用&lt;code&gt;```&lt;/code&gt;包裹代码块并声明所用语言，不推荐在代码块的行首放置 4 个空格或 1 个制表符
 
 #### 行首放置空格
 
@@ -177,16 +178,16 @@ background-position:center left;
 ### 普通链接
 
 ```markdown
-<链接地址>
+&lt;链接地址&gt;
 [链接名称](链接地址)
 [链接名称](链接地址 "可选标题")
 
-<https://markdown-here.com>
+&lt;https://markdown-here.com&gt;
 [Markdown Here](https://markdown-here.com)
 [Markdown Here](https://markdown-here.com "Markdown Here 标题")
 ```
 
-<https://markdown-here.com>
+&lt;https://markdown-here.com&gt;
 
 [Markdown Here](https://markdown-here.com)
 
@@ -237,33 +238,33 @@ background-position:center left;
 ![红色星球][Sky-seeker_url]
 [Sky-seeker_url]: https://cn.bing.com/th?id=OHR.RedPlanetDay_ZH-CN4913018041_1920x1080.jpg
 
-<img src="https://markdown-here.com/img/icon256.png" width="50%">
+&lt;img src="https://markdown-here.com/img/icon256.png" width="50%"&gt;
 ```
 
 ![红色星球][Sky-seeker_url]
-[Sky-seeker_url]: <https://cn.bing.com/th?id=OHR.RedPlanetDay_ZH-CN4913018041_1920x1080.jpg>
+[Sky-seeker_url]: &lt;https://cn.bing.com/th?id=OHR.RedPlanetDay_ZH-CN4913018041_1920x1080.jpg&gt;
 
-<img src="https://cn.bing.com/th?id=OHR.RedPlanetDay_ZH-CN4913018041_1920x1080.jpg" width="10%">
+&lt;img src="https://cn.bing.com/th?id=OHR.RedPlanetDay_ZH-CN4913018041_1920x1080.jpg" width="10%"&gt;
 
 ## Markdown 高级技巧
 
 ### 支持的 HTML 元素
 
-- 不在 Markdown 涵盖范围内的标签，都能直接使用。目前支持的 HTML 元素有：`<kbd> <b> <i> <em> <sup> <sub> <br>`等。
+- 不在 Markdown 涵盖范围内的标签，都能直接使用。目前支持的 HTML 元素有：`&lt;kbd&gt; &lt;b&gt; &lt;i&gt; &lt;em&gt; &lt;sup&gt; &lt;sub&gt; &lt;br&gt;`等。
 
   ```
-  1. 使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
-  2. 特殊符号 &copy; &trade; &amp; 18&ordm;C
-  3. <span style="color: red;">这是一行红色的文字</span>
+  1. 使用 &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;Del&lt;/kbd&gt; 重启电脑
+  2. 特殊符号 &amp;copy; &amp;trade; &amp;amp; 18&amp;ordm;C
+  3. &lt;span style="color: red;"&gt;这是一行红色的文字&lt;/span&gt;
   4. 插入视频
-  <video src="$appres/images/example.mp4"></video>
+  &lt;video src="$appres/images/example.mp4"&gt;&lt;/video&gt;
   5. Emoji 表情 :smiley:
   ```
 
-  1. 使用 <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Del</kbd> 重启电脑
-  2. 特殊符号 &copy; &trade; &amp; 18&ordm;C
-  3. <span style="color: red;">这是一行红色的文字</span>
-  4. 插入视频<video src="$appres/images/example.mp4"></video>
+  1. 使用 &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;Del&lt;/kbd&gt; 重启电脑
+  2. 特殊符号 &amp;copy; &amp;trade; &amp;amp; 18&amp;ordm;C
+  3. &lt;span style="color: red;"&gt;这是一行红色的文字&lt;/span&gt;
+  4. 插入视频&lt;video src="$appres/images/example.mp4"&gt;&lt;/video&gt;
   5. Emoji 表情 :smiley:
 
 ### 转义
@@ -285,9 +286,9 @@ $$
 
 $$
 \mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\
-\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
-\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
+\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\
 \end{vmatrix}
 {$tep1}{\style{visibility:hidden}{(x+1)(x+1)}}
 $$
@@ -299,9 +300,9 @@ $$
 
 $$
 \mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\
-\frac{\partial X}{\partial u} &  \frac{\partial Y}{\partial u} & 0 \\
-\frac{\partial X}{\partial v} &  \frac{\partial Y}{\partial v} & 0 \\
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
+\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\
 \end{vmatrix}
 {$tep1}{\style{visibility:hidden}{(x+1)(x+1)}}
 $$
@@ -323,10 +324,10 @@ pie
 
 ```mermaid
 graph LR
-A[方形] -->B(圆角)
-    B --> C{条件a}
-    C -->|a=1| D[结果1]
-    C -->|a=2| E[结果2]
+A[方形] --&gt;B(圆角)
+    B --&gt; C{条件a}
+    C --&gt;|a=1| D[结果1]
+    C --&gt;|a=2| E[结果2]
     F[横向流程图]
 ```
 
@@ -334,62 +335,62 @@ A[方形] -->B(圆角)
 
 ```mermaid
 graph TD
-A[方形] --> B(圆角)
-    B --> C{条件a}
-    C --> |a=1| D[结果1]
-    C --> |a=2| E[结果2]
+A[方形] --&gt; B(圆角)
+    B --&gt; C{条件a}
+    C --&gt; |a=1| D[结果1]
+    C --&gt; |a=2| E[结果2]
     F[竖向流程图]
 ```
 
 #### 标准流程图 `flow`
 
 ```flow
-st=>start: 开始框
-op=>operation: 处理框
-cond=>condition: 判断框(是或否?)
-sub1=>subroutine: 子流程
-io=>inputoutput: 输入输出框
-e=>end: 结束框
-st->op->cond
-cond(yes)->io->e
-cond(no)->sub1(right)->op
+st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框(是或否?)
+sub1=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st-&gt;op-&gt;cond
+cond(yes)-&gt;io-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op
 ```
 
 #### 标准流程图（横向） `flow`
 
 ```flow
-st=>start: 开始框
-op=>operation: 处理框
-cond=>condition: 判断框(是或否?)
-sub1=>subroutine: 子流程
-io=>inputoutput: 输入输出框
-e=>end: 结束框
-st(right)->op(right)->cond
-cond(yes)->io(bottom)->e
-cond(no)->sub1(right)->op
+st=&gt;start: 开始框
+op=&gt;operation: 处理框
+cond=&gt;condition: 判断框(是或否?)
+sub1=&gt;subroutine: 子流程
+io=&gt;inputoutput: 输入输出框
+e=&gt;end: 结束框
+st(right)-&gt;op(right)-&gt;cond
+cond(yes)-&gt;io(bottom)-&gt;e
+cond(no)-&gt;sub1(right)-&gt;op
 ```
 
 #### UML 时序图 `sequence`
 
 ```sequence
-对象A->对象B: 对象B你好吗?（请求）
+对象A-&gt;对象B: 对象B你好吗?（请求）
 Note right of 对象B: 对象B的描述
 Note left of 对象A: 对象A的描述(提示)
-对象B-->对象A: 我很好(响应)
-对象A->对象B: 你真的好吗？
+对象B--&gt;对象A: 我很好(响应)
+对象A-&gt;对象B: 你真的好吗？
 ```
 
 #### UML 复杂时序图 `sequence`
 
 ```sequence
 Title: 标题：复杂使用
-对象A->对象B: 对象B你好吗?（请求）
+对象A-&gt;对象B: 对象B你好吗?（请求）
 Note right of 对象B: 对象B的描述
 Note left of 对象A: 对象A的描述(提示)
-对象B-->对象A: 我很好(响应)
-对象B->小三: 你好吗
-小三-->>对象A: 对象B找我了
-对象A->对象B: 你真的好吗？
+对象B--&gt;对象A: 我很好(响应)
+对象B-&gt;小三: 你好吗
+小三--&gt;&gt;对象A: 对象B找我了
+对象A-&gt;对象B: 你真的好吗？
 Note over 小三,对象B: 我们是朋友
 participant C
 Note right of C: 没人陪我玩
@@ -398,18 +399,18 @@ Note right of C: 没人陪我玩
 #### UML 标准时序图 `mermaid`
 
 ```mermaid
-%% 时序图例子,-> 直线，-->虚线，->>实线箭头
+%% 时序图例子,-&gt; 直线，--&gt;虚线，-&gt;&gt;实线箭头
   sequenceDiagram
     participant 张三
     participant 李四
-    张三->王五: 王五你好吗？
+    张三-&gt;王五: 王五你好吗？
     loop 健康检查
-        王五->王五: 与疾病战斗
+        王五-&gt;王五: 与疾病战斗
     end
-    Note right of 王五: 合理 食物 <br/>看医生...
-    李四-->>张三: 很好!
-    王五->李四: 你怎么样?
-    李四-->王五: 很好!
+    Note right of 王五: 合理 食物 &lt;br/&gt;看医生...
+    李四--&gt;&gt;张三: 很好!
+    王五-&gt;李四: 你怎么样?
+    李四--&gt;王五: 很好!
 ```
 
 #### 甘特图 `mermaid`
@@ -434,5 +435,5 @@ section 测试
 压力测试                               :after a1  , 20h
 测试报告                               : 48h
 ```
-</code>
-</pre>
+</code></pre>
+
