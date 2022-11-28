@@ -264,7 +264,7 @@ background-position:center left;
   1. 使用 &lt;kbd&gt;Ctrl&lt;/kbd&gt;+&lt;kbd&gt;Alt&lt;/kbd&gt;+&lt;kbd&gt;Del&lt;/kbd&gt; 重启电脑
   2. 特殊符号 &amp;copy; &amp;trade; &amp;amp; 18&amp;ordm;C
   3. &lt;span style="color: red;"&gt;这是一行红色的文字&lt;/span&gt;
-  4. 插入视频&lt;video src="$appres/images/example.mp4"&gt;&lt;/video&gt;
+  4. 插入视频&lt;video src="http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4"&gt;&lt;/video&gt;
   5. Emoji 表情 :smiley:
 
 ### 转义
